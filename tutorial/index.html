@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Custom DNS Unlocking Tutorial</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
+<link href="Untitled1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+var playerYouTube1;
+var playerYouTube2;
+var playerYouTube3;
+var playerYouTube4;
+var playerYouTube5;
+function onYouTubeIframeAPIReady() {
+   playerYouTube1 = new YT.Player('YouTube1', {
+      events: {
+      }
+   });
+   playerYouTube2 = new YT.Player('YouTube2', {
+      events: {
+      }
+   });
+   playerYouTube3 = new YT.Player('YouTube3', {
+      events: {
+      }
+   });
+   playerYouTube4 = new YT.Player('YouTube4', {
+      events: {
+      }
+   });
+   playerYouTube5 = new YT.Player('YouTube5', {
+      events: {
+      }
+   });
+}
+</script>
+<script src="wwb15.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#Tabs1").tabs(
+   {
+      show: false,
+      hide: false,
+      event: 'click',
+      collapsible: false
+   });
+   $("#Tabs1").on('tabsactivate', function(e, ui)
+   {
+      var index = $("#Tabs1").tabs('option', 'active');
+      switch(index)
+      {
+         case 0:
+            playerYouTube2.pauseVideo();
+            playerYouTube3.pauseVideo();
+            playerYouTube4.pauseVideo();
+            playerYouTube5.pauseVideo();
+            break;
+         case 1:
+            playerYouTube1.pauseVideo();
+            playerYouTube3.pauseVideo();
+            playerYouTube4.pauseVideo();
+            playerYouTube5.pauseVideo();
+            break;
+         case 2:
+            playerYouTube1.pauseVideo();
+            playerYouTube2.pauseVideo();
+            playerYouTube4.pauseVideo();
+            playerYouTube5.pauseVideo();
+            break;
+         case 3:
+            playerYouTube1.pauseVideo();
+            playerYouTube2.pauseVideo();
+            playerYouTube3.pauseVideo();
+            playerYouTube5.pauseVideo();
+            break;
+         case 4:
+            playerYouTube1.pauseVideo();
+            playerYouTube2.pauseVideo();
+            playerYouTube3.pauseVideo();
+            playerYouTube4.pauseVideo();
+            break;
+      }
+   });
+});
+</script>
+</head>
+<body>
+<div id="Tabs1" style="position:absolute;left:7px;top:107px;width:815px;height:501px;z-index:5;">
+<ul>
+<li><a href="#tabs1-page-0"><span>Windows</span></a></li>
+<li><a href="#tabs1-page-1"><span>Android</span></a></li>
+<li><a href="#tabs1-page-2"><span>macOS</span></a></li>
+<li><a href="#tabs1-page-3"><span>iOS</span></a></li>
+<li><a href="#tabs1-page-4"><span>[Router]</span></a></li>
+</ul>
+<div style="height:475px;" id="tabs1-page-0">
+<div id="wb_YouTube1" style="position:absolute;left:2px;top:3px;width:811px;height:456px;z-index:0;">
+<iframe id="YouTube1" src="https://www.youtube.com/embed/YMWnoHNDVWM?rel=0&amp;autoplay=0&amp;enablejsapi=1&amp;ap=%2526fmt%3D18&amp;autohide=0&amp;fs=1" allowfullscreen></iframe>
+</div>
+</div>
+<div style="height:475px;" id="tabs1-page-1">
+<div id="wb_YouTube2" style="position:absolute;left:2px;top:3px;width:811px;height:456px;z-index:1;">
+<iframe id="YouTube2" src="https://www.youtube.com/embed/iif4MkGl4ps?rel=0&amp;autoplay=0&amp;enablejsapi=1&amp;ap=%2526fmt%3D18&amp;autohide=0&amp;fs=1" allowfullscreen></iframe>
+</div>
+</div>
+<div style="height:475px;" id="tabs1-page-2">
+<div id="wb_YouTube3" style="position:absolute;left:2px;top:3px;width:811px;height:456px;z-index:2;">
+<iframe id="YouTube3" src="https://www.youtube.com/embed/NpXujNPx7J4?rel=0&amp;autoplay=0&amp;enablejsapi=1&amp;ap=%2526fmt%3D18&amp;autohide=0&amp;fs=1" allowfullscreen></iframe>
+</div>
+</div>
+<div style="height:475px;" id="tabs1-page-3">
+<div id="wb_YouTube4" style="position:absolute;left:2px;top:3px;width:811px;height:456px;z-index:3;">
+<iframe id="YouTube4" src="https://www.youtube.com/embed/mTc4ojueDSQ?rel=0&amp;autoplay=0&amp;enablejsapi=1&amp;ap=%2526fmt%3D18&amp;autohide=0&amp;fs=1" allowfullscreen></iframe>
+</div>
+</div>
+<div style="height:475px;" id="tabs1-page-4">
+<div id="wb_YouTube5" style="position:absolute;left:2px;top:3px;width:811px;height:456px;z-index:4;">
+<iframe id="YouTube5" src="https://www.youtube.com/embed/xcQQcO_twAM?rel=0&amp;autoplay=0&amp;enablejsapi=1&amp;ap=%2526fmt%3D18&amp;autohide=0&amp;fs=1" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<div id="wb_Text1" style="position:absolute;left:7px;top:0px;width:168px;height:105px;z-index:6;">
+<span style="color:#000000;font-family:Arial;font-size:12px;"><strong>Google DNS:</strong><br>IPv4 🡇<br>8.8.8.8<br>8.8.4.4<br>IPv6 🡇<br>2001:4860:4860::8888<br>2001:4860:4860::8844</span></div>
+<div id="wb_Text2" style="position:absolute;left:188px;top:0px;width:168px;height:105px;z-index:7;">
+<span style="color:#000000;font-family:Arial;font-size:12px;"><strong>Cloudflare DNS (a bit faster):<br></strong>IPv4<strong> </strong>🡇<br>1.1.1.1<br>1.0.0.1<br>IPv6 🡇<br>2606:4700:4700::1111<br>2606:4700:4700::1001</span></div>
+</body>
+</html>
